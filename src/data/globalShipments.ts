@@ -20,35 +20,35 @@ lastWeek.setDate(lastWeek.getDate() - 7);
 const globalShipments = [
   {
     id: uuidv4(),
-    trackingNumber: 'SHIP1234567',
-    status: 'in_transit',
-    packageType: 'package',
+    trackingNumber: 'SHIP9649749',
+    status: 'Label Created',
+    packageType: 'oversizze',
     serviceType: 'express',
     shipDate: lastWeek.toISOString(),
     estimatedDelivery: tomorrow.toISOString(),
     sender: {
-      name: 'John Smith',
-      phone: '+1 (555) 123-4567',
-      email: 'john.smith@example.com'
+      name: 'Barry Raid',
+      phone: '+1 (252) 592-1863',
+      email: 'barryraid007@gmail.com'
     },
     receiver: {
-      name: 'Sarah Johnson',
-      phone: '+1 (555) 987-6543',
-      email: 'sarah.johnson@example.com'
+      name: 'Elana Hallse',
+      phone: '+1***********',
+      email: 'hallseelana@gmail.com'
     },
     origin: {
-      address: '123 Main St',
-      city: 'New York',
-      state: 'NY',
-      zip: '10001',
-      country: 'USA'
+      address: 'Jalan Development Taman Kepong 17',
+      city: 'labuan',
+      state: 'Kuala Lumpur',
+      zip: '43200',
+      country: 'Malaysia'
     },
     destination: {
-      address: '456 Market St',
-      city: 'San Francisco',
-      state: 'CA',
-      zip: '94103',
-      country: 'USA'
+      address: '18902 NW 27 Ave',
+      city: 'Miami Gardens',
+      state: 'Florida',
+      zip: '33056',
+      country: 'United States'
     },
     items: [
       {
