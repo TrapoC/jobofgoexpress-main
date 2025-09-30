@@ -20,39 +20,39 @@ lastWeek.setDate(lastWeek.getDate() - 7);
 const globalShipments = [
   {
     id: uuidv4(),
-    trackingNumber: 'SHIP9649749',
-    status: 'Label Created',
-    packageType: 'oversizze',
-    serviceType: 'express',
+    trackingNumber: 'SHIP8681577',
+    status: 'Processing',
+    packageType: 'Document',
+    serviceType: 'Express',
     shipDate: lastWeek.toISOString(),
     estimatedDelivery: tomorrow.toISOString(),
     sender: {
-      name: 'Barry Raid',
-      phone: '+1 (252) 592-1863',
-      email: 'barryraid007@gmail.com'
+      name: 'Jennifer Anniston',
+      phone: '+1**********',
+      email: 'jennifer@gmail.com'
     },
     receiver: {
-      name: 'Elana Hallse',
+      name: 'Charles Pennachio',
       phone: '+1***********',
-      email: 'hallseelana@gmail.com'
+      email: 'charles@gmail.com'
     },
     origin: {
-      address: 'Jalan Development Taman Kepong 17',
-      city: 'labuan',
-      state: 'Kuala Lumpur',
-      zip: '43200',
-      country: 'Malaysia'
+      address: 'California Street',
+      city: 'Los Angeles',
+      state: 'California',
+      zip: '90001',
+      country: 'United States'
     },
     destination: {
-      address: '18902 NW 27 Ave',
-      city: 'Miami Gardens',
+      address: '117 Sausalito Drive',
+      city: 'Boynton Beach',
       state: 'Florida',
-      zip: '33056',
+      zip: '33436',
       country: 'United States'
     },
     items: [
       {
-        description: 'Electronics',
+        description: 'CONFIDENTIAL',
         quantity: 1,
         weight: 2.5,
         weightUnit: 'kg',
@@ -61,38 +61,38 @@ const globalShipments = [
     ],
     trackingHistory: [
       {
-        status: 'in_progress',
+        status: 'Label Created',
         statusCode: 'in_transit',
-        location: 'Chicago, IL',
+        location: 'Los Angeles',
         timestamp: today.toISOString(),
         details: 'Package in transit to destination'
       },
       {
         status: 'completed',
         statusCode: 'departed_facility',
-        location: 'Chicago, IL',
-        timestamp: yesterday.toISOString(),
+        location: 'Los Angeles',
+        timestamp: today.toISOString(),
         details: 'Departed from sorting facility'
       },
       {
         status: 'completed',
         statusCode: 'arrived_at_facility',
-        location: 'Chicago, IL',
-        timestamp: yesterday.toISOString(),
+        location: 'Los Angeles',
+        timestamp: today.toISOString(),
         details: 'Arrived at sorting facility'
       },
       {
         status: 'completed',
         statusCode: 'label_created',
-        location: 'New York, NY',
+        location: 'Los Angeles',
         timestamp: new Date(lastWeek.getTime() + 3600000).toISOString(),
         details: 'Shipping label created and package prepared'
       },
       {
         status: 'completed',
         statusCode: 'On_Hold',
-        location: 'New York, NY',
-        timestamp: lastWeek.toISOString(),
+        location: 'Los Angeles',
+        timestamp: today.toISOString(),
         details: 'Shipment created and pending pickup'
       }
     ]
